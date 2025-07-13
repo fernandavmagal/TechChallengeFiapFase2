@@ -128,7 +128,7 @@ Serviço MongoDB disponível no ambiente de teste
 
 🧩 Principais Complexidades e Desafios Enfrentados
 🔥 Configuração de Ambiente
-Primeira vez utilizando Docker em projeto real: apanhamos para entender a lógica de containers, network e volumes. Quebramos a cabeça até entender que o backend só “enxergava” o Mongo se estivesse tudo no mesmo docker-compose.
+Primeira vez utilizando Docker em projeto real: apanhamos para entender a lógica de containers, network e volumes. Quebramos a cabeça até entender que o backend só “enxergava” o Mongo se estivesse tudo no mesmo docker-compose. 
 
 Problemas de permissão no Docker Desktop no Windows, especialmente com WSL2.
 
@@ -144,6 +144,8 @@ Complexo entender como subir múltiplos serviços e como as redes internas do Do
 Gerenciar persistência do banco usando volumes foi um aprendizado importante pra evitar perder dados a cada build.
 
 Debugging de erros do tipo “Cannot connect to MongoDB” e “Connection refused” foram frequentes até entender a ordem de inicialização dos containers.
+
+Performance prejudicada, sendo necessário a reinicialização periódica do windows.
 
 👀 Outras Pedras no Caminho
 Build do Node travando com dependência errada ou cache de pacote corrompido.
